@@ -1,0 +1,610 @@
+[
+  {
+    "id": 1,
+    "number": 58,
+    "publishDate": "2026-06-26",
+    "rarity": "RR",
+    "rarityOrder": 1,
+    "name": "m6-058-y8x2s"
+  },
+  {
+    "id": 2,
+    "number": 60,
+    "publishDate": "2026-06-26",
+    "rarity": "C",
+    "rarityOrder": 4,
+    "name": "m6-060-m62sj"
+  },
+  {
+    "id": 3,
+    "number": 61,
+    "publishDate": "2026-06-26",
+    "rarity": "C",
+    "rarityOrder": 4,
+    "name": "m6-061-fwcxu"
+  },
+  {
+    "id": 4,
+    "number": 62,
+    "publishDate": "2026-06-26",
+    "rarity": "RR",
+    "rarityOrder": 1,
+    "name": "m6-062-ee4pf"
+  },
+  {
+    "id": 5,
+    "number": 64,
+    "publishDate": "2026-06-26",
+    "rarity": "U",
+    "rarityOrder": 3,
+    "name": "m6-064-y23wa"
+  },
+  {
+    "id": 6,
+    "number": 66,
+    "publishDate": "2026-06-26",
+    "rarity": "U",
+    "rarityOrder": 3,
+    "name": "m6-066-z82ch"
+  },
+  {
+    "id": 7,
+    "number": 67,
+    "publishDate": "2026-06-26",
+    "rarity": "C",
+    "rarityOrder": 4,
+    "name": "m6-067-fmete"
+  },
+  {
+    "id": 8,
+    "number": 69,
+    "publishDate": "2026-06-26",
+    "rarity": "U",
+    "rarityOrder": 3,
+    "name": "m6-069-g2bt9"
+  },
+  {
+    "id": 9,
+    "number": 73,
+    "publishDate": "2026-06-26",
+    "rarity": "U",
+    "rarityOrder": 3,
+    "name": "m6-073-djh4k"
+  },
+  {
+    "id": 10,
+    "number": 74,
+    "publishDate": "2026-06-26",
+    "rarity": "U",
+    "rarityOrder": 3,
+    "name": "m6-074-xa4d2"
+  },
+  {
+    "id": 11,
+    "number": 4,
+    "publishDate": "2026-07-10",
+    "rarity": "C",
+    "rarityOrder": 4,
+    "name": "m6-004-achcu"
+  },
+  {
+    "id": 12,
+    "number": 5,
+    "publishDate": "2026-07-10",
+    "rarity": "R",
+    "rarityOrder": 2,
+    "name": "m6-005-gjt59"
+  },
+  {
+    "id": 13,
+    "number": 8,
+    "publishDate": "2026-07-10",
+    "rarity": "C",
+    "rarityOrder": 4,
+    "name": "m6-008-c3t2t"
+  },
+  {
+    "id": 14,
+    "number": 9,
+    "publishDate": "2026-07-10",
+    "rarity": "RR",
+    "rarityOrder": 1,
+    "name": "m6-009-sxbub"
+  },
+  {
+    "id": 15,
+    "number": 21,
+    "publishDate": "2026-07-10",
+    "rarity": "RR",
+    "rarityOrder": 1,
+    "name": "m6-021-z2agd"
+  },
+  {
+    "id": 16,
+    "number": 63,
+    "publishDate": "2026-07-10",
+    "rarity": "C",
+    "rarityOrder": 4,
+    "name": "m6-063-urnu7"
+  },
+  {
+    "id": 17,
+    "number": 65,
+    "publishDate": "2026-07-10",
+    "rarity": "U",
+    "rarityOrder": 3,
+    "name": "m6-065-ymh9i"
+  },
+  {
+    "id": 18,
+    "number": 68,
+    "publishDate": "2026-07-10",
+    "rarity": "U",
+    "rarityOrder": 3,
+    "name": "m6-068-p3uci"
+  },
+  {
+    "id": 19,
+    "number": 71,
+    "publishDate": "2026-07-10",
+    "rarity": "U",
+    "rarityOrder": 3,
+    "name": "m6-071-ix4ch"
+  },
+  {
+    "id": 20,
+    "number": 72,
+    "publishDate": "2026-07-10",
+    "rarity": "U",
+    "rarityOrder": 3,
+    "name": "m6-072-krz8m"
+  },
+  {
+    "id": 21,
+    "number": 46,
+    "publishDate": "2026-07-10",
+    "rarity": "C",
+    "rarityOrder": 4,
+    "name": "m6-046-sbt8r"
+  },
+  {
+    "id": 22,
+    "number": 47,
+    "publishDate": "2026-07-10",
+    "rarity": "C",
+    "rarityOrder": 4,
+    "name": "m6-047-i6xyz"
+  },
+  {
+    "id": 23,
+    "number": 48,
+    "publishDate": "2026-07-10",
+    "rarity": "RR",
+    "rarityOrder": 1,
+    "name": "m6-048-u5t2n"
+  },
+  {
+    "id": 24,
+    "number": 1,
+    "publishDate": "2026-07-24",
+    "rarity": "C",
+    "rarityOrder": 4,
+    "name": "m6-001-uwn9p"
+  },
+  {
+    "id": 25,
+    "number": 2,
+    "publishDate": "2026-07-24",
+    "rarity": "C",
+    "rarityOrder": 4,
+    "name": "m6-002-t9br4"
+  },
+  {
+    "id": 26,
+    "number": 3,
+    "publishDate": "2026-07-24",
+    "rarity": "C",
+    "rarityOrder": 4,
+    "name": "m6-003-i5axz"
+  },
+  {
+    "id": 27,
+    "number": 6,
+    "publishDate": "2026-07-24",
+    "rarity": "C",
+    "rarityOrder": 4,
+    "name": "m6-006-b7u2m"
+  },
+  {
+    "id": 28,
+    "number": 7,
+    "publishDate": "2026-07-24",
+    "rarity": "C",
+    "rarityOrder": 4,
+    "name": "m6-007-amy3w"
+  },
+  {
+    "id": 29,
+    "number": 10,
+    "publishDate": "2026-07-24",
+    "rarity": "C",
+    "rarityOrder": 4,
+    "name": "m6-010-kxxt6"
+  },
+  {
+    "id": 30,
+    "number": 11,
+    "publishDate": "2026-07-24",
+    "rarity": "R",
+    "rarityOrder": 2,
+    "name": "m6-011-wgtsy"
+  },
+  {
+    "id": 31,
+    "number": 12,
+    "publishDate": "2026-07-24",
+    "rarity": "C",
+    "rarityOrder": 4,
+    "name": "m6-012-apnns"
+  },
+  {
+    "id": 32,
+    "number": 13,
+    "publishDate": "2026-07-24",
+    "rarity": "U",
+    "rarityOrder": 3,
+    "name": "m6-013-pt5n2"
+  },
+  {
+    "id": 33,
+    "number": 14,
+    "publishDate": "2026-07-24",
+    "rarity": "C",
+    "rarityOrder": 4,
+    "name": "m6-014-ffkfi"
+  },
+  {
+    "id": 34,
+    "number": 15,
+    "publishDate": "2026-07-24",
+    "rarity": "RR",
+    "rarityOrder": 1,
+    "name": "m6-015-tr2s5"
+  },
+  {
+    "id": 35,
+    "number": 16,
+    "publishDate": "2026-07-24",
+    "rarity": "C",
+    "rarityOrder": 4,
+    "name": "m6-016-et599"
+  },
+  {
+    "id": 36,
+    "number": 17,
+    "publishDate": "2026-07-24",
+    "rarity": "C",
+    "rarityOrder": 4,
+    "name": "m6-017-kxnyb"
+  },
+  {
+    "id": 37,
+    "number": 18,
+    "publishDate": "2026-07-24",
+    "rarity": "R",
+    "rarityOrder": 2,
+    "name": "m6-018-ezy3t"
+  },
+  {
+    "id": 38,
+    "number": 19,
+    "publishDate": "2026-07-24",
+    "rarity": "C",
+    "rarityOrder": 4,
+    "name": "m6-019-kcw7g"
+  },
+  {
+    "id": 39,
+    "number": 20,
+    "publishDate": "2026-07-24",
+    "rarity": "U",
+    "rarityOrder": 3,
+    "name": "m6-020-wggzb"
+  },
+  {
+    "id": 40,
+    "number": 22,
+    "publishDate": "2026-07-24",
+    "rarity": "C",
+    "rarityOrder": 4,
+    "name": "m6-022-izjxf"
+  },
+  {
+    "id": 41,
+    "number": 23,
+    "publishDate": "2026-07-24",
+    "rarity": "U",
+    "rarityOrder": 3,
+    "name": "m6-023-adfmt"
+  },
+  {
+    "id": 42,
+    "number": 24,
+    "publishDate": "2026-07-24",
+    "rarity": "RR",
+    "rarityOrder": 1,
+    "name": "m6-024-y4266"
+  },
+  {
+    "id": 43,
+    "number": 25,
+    "publishDate": "2026-07-24",
+    "rarity": "U",
+    "rarityOrder": 3,
+    "name": "m6-025-ydksm"
+  },
+  {
+    "id": 44,
+    "number": 26,
+    "publishDate": "2026-07-24",
+    "rarity": "C",
+    "rarityOrder": 4,
+    "name": "m6-026-wcdr8"
+  },
+  {
+    "id": 45,
+    "number": 27,
+    "publishDate": "2026-07-24",
+    "rarity": "C",
+    "rarityOrder": 4,
+    "name": "m6-027-erkbn"
+  },
+  {
+    "id": 46,
+    "number": 28,
+    "publishDate": "2026-07-24",
+    "rarity": "U",
+    "rarityOrder": 3,
+    "name": "m6-028-bse4x"
+  },
+  {
+    "id": 47,
+    "number": 29,
+    "publishDate": "2026-07-24",
+    "rarity": "C",
+    "rarityOrder": 4,
+    "name": "m6-029-rwfe4"
+  },
+  {
+    "id": 48,
+    "number": 30,
+    "publishDate": "2026-07-24",
+    "rarity": "C",
+    "rarityOrder": 4,
+    "name": "m6-030-rh24r"
+  },
+  {
+    "id": 49,
+    "number": 31,
+    "publishDate": "2026-07-24",
+    "rarity": "R",
+    "rarityOrder": 2,
+    "name": "m6-031-mjy5i"
+  },
+  {
+    "id": 50,
+    "number": 32,
+    "publishDate": "2026-07-24",
+    "rarity": "C",
+    "rarityOrder": 4,
+    "name": "m6-032-u7987"
+  },
+  {
+    "id": 51,
+    "number": 33,
+    "publishDate": "2026-07-24",
+    "rarity": "RR",
+    "rarityOrder": 1,
+    "name": "m6-033-g8hda"
+  },
+  {
+    "id": 52,
+    "number": 34,
+    "publishDate": "2026-07-24",
+    "rarity": "U",
+    "rarityOrder": 3,
+    "name": "m6-034-w99tc"
+  },
+  {
+    "id": 53,
+    "number": 35,
+    "publishDate": "2026-07-24",
+    "rarity": "C",
+    "rarityOrder": 4,
+    "name": "m6-035-rj72s"
+  },
+  {
+    "id": 54,
+    "number": 36,
+    "publishDate": "2026-07-24",
+    "rarity": "C",
+    "rarityOrder": 4,
+    "name": "m6-036-zsrxe"
+  },
+  {
+    "id": 55,
+    "number": 37,
+    "publishDate": "2026-07-24",
+    "rarity": "C",
+    "rarityOrder": 4,
+    "name": "m6-037-bfngy"
+  },
+  {
+    "id": 56,
+    "number": 38,
+    "publishDate": "2026-07-24",
+    "rarity": "U",
+    "rarityOrder": 3,
+    "name": "m6-038-sgfz9"
+  },
+  {
+    "id": 57,
+    "number": 39,
+    "publishDate": "2026-07-24",
+    "rarity": "R",
+    "rarityOrder": 2,
+    "name": "m6-039-u2f25"
+  },
+  {
+    "id": 58,
+    "number": 40,
+    "publishDate": "2026-07-24",
+    "rarity": "U",
+    "rarityOrder": 3,
+    "name": "m6-040-y5ugm"
+  },
+  {
+    "id": 59,
+    "number": 41,
+    "publishDate": "2026-07-24",
+    "rarity": "C",
+    "rarityOrder": 4,
+    "name": "m6-041-e47fa"
+  },
+  {
+    "id": 60,
+    "number": 42,
+    "publishDate": "2026-07-24",
+    "rarity": "C",
+    "rarityOrder": 4,
+    "name": "m6-042-hkkww"
+  },
+  {
+    "id": 61,
+    "number": 43,
+    "publishDate": "2026-07-24",
+    "rarity": "R",
+    "rarityOrder": 2,
+    "name": "m6-043-kxb42"
+  },
+  {
+    "id": 62,
+    "number": 44,
+    "publishDate": "2026-07-24",
+    "rarity": "C",
+    "rarityOrder": 4,
+    "name": "m6-044-jnsye"
+  },
+  {
+    "id": 63,
+    "number": 45,
+    "publishDate": "2026-07-24",
+    "rarity": "C",
+    "rarityOrder": 4,
+    "name": "m6-045-ba2w8"
+  },
+  {
+    "id": 64,
+    "number": 49,
+    "publishDate": "2026-07-24",
+    "rarity": "U",
+    "rarityOrder": 3,
+    "name": "m6-049-te5ar"
+  },
+  {
+    "id": 65,
+    "number": 50,
+    "publishDate": "2026-07-24",
+    "rarity": "C",
+    "rarityOrder": 4,
+    "name": "m6-050-mn5ey"
+  },
+  {
+    "id": 66,
+    "number": 51,
+    "publishDate": "2026-07-24",
+    "rarity": "C",
+    "rarityOrder": 4,
+    "name": "m6-051-b3wa5"
+  },
+  {
+    "id": 67,
+    "number": 52,
+    "publishDate": "2026-07-24",
+    "rarity": "R",
+    "rarityOrder": 2,
+    "name": "m6-052-hfr9c"
+  },
+  {
+    "id": 68,
+    "number": 53,
+    "publishDate": "2026-07-24",
+    "rarity": "C",
+    "rarityOrder": 4,
+    "name": "m6-053-gx9it"
+  },
+  {
+    "id": 69,
+    "number": 54,
+    "publishDate": "2026-07-24",
+    "rarity": "C",
+    "rarityOrder": 4,
+    "name": "m6-054-bn6mr"
+  },
+  {
+    "id": 70,
+    "number": 55,
+    "publishDate": "2026-07-24",
+    "rarity": "C",
+    "rarityOrder": 4,
+    "name": "m6-055-psxae"
+  },
+  {
+    "id": 71,
+    "number": 56,
+    "publishDate": "2026-07-24",
+    "rarity": "R",
+    "rarityOrder": 2,
+    "name": "m6-056-ngisz"
+  },
+  {
+    "id": 72,
+    "number": 57,
+    "publishDate": "2026-07-24",
+    "rarity": "C",
+    "rarityOrder": 4,
+    "name": "m6-057-t5zrm"
+  },
+  {
+    "id": 73,
+    "number": 59,
+    "publishDate": "2026-07-24",
+    "rarity": "U",
+    "rarityOrder": 3,
+    "name": "m6-059-f36zz"
+  },
+  {
+    "id": 74,
+    "number": 70,
+    "publishDate": "2026-07-24",
+    "rarity": "U",
+    "rarityOrder": 3,
+    "name": "m6-070-mn5gg"
+  },
+  {
+    "id": 75,
+    "number": 75,
+    "publishDate": "2026-07-24",
+    "rarity": "U",
+    "rarityOrder": 3,
+    "name": "m6-075-j2x27"
+  },
+  {
+    "id": 76,
+    "number": 76,
+    "publishDate": "2026-07-24",
+    "rarity": "U",
+    "rarityOrder": 3,
+    "name": "m6-076-rx6n3"
+  }
+]

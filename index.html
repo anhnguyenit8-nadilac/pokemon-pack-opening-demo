@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Pack Opening Concept Demo</title>
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="Concept prototype of a 3D booster pack opening feature. Not affiliated with The Pokémon Company.">
+  <link rel="stylesheet" href="./pack-opening.css">
+</head>
+<body>
+  <div class="po-bg" aria-hidden="true"><div class="po-bg__rare"></div></div>
+  <canvas id="po-canvas" aria-hidden="true"></canvas>
+
+  <!-- swipe hint: a finger that slides along the tear line -->
+  <div class="po-finger" id="po-finger" aria-hidden="true">
+    <span class="po-finger__trail"></span>
+    <span class="po-finger__ring"></span>
+    <svg class="po-finger__hand" viewBox="0 0 64 80" width="56" height="70">
+      <g fill="#fff">
+        <rect x="25" y="2" width="13" height="46" rx="6.5"/>
+        <rect x="37" y="25" width="11" height="22" rx="5.5"/>
+        <rect x="46" y="30" width="10" height="20" rx="5"/>
+        <rect x="9" y="38" width="12" height="24" rx="6" transform="rotate(-32 15 50)"/>
+        <rect x="15" y="34" width="41" height="40" rx="15"/>
+      </g>
+    </svg>
+  </div>
+  <div class="po-flash" id="po-flash" aria-hidden="true"></div>
+
+  <button class="po-vault-btn" id="po-vault-btn" type="button">
+    <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Zm0 2v3h14V5H5Zm2 6v8h10v-8H7Z"/></svg>
+    <span data-i18n="vault">Vault</span> <span class="po-vault-btn__count" id="po-vault-count">0</span>
+  </button>
+
+  <nav class="po-lang" data-i18n-aria="lang.nav" aria-label="Language">
+    <button type="button" data-lang-link="ja" lang="ja">日本語</button>
+    <button type="button" data-lang-link="en" lang="en">EN</button>
+    <button type="button" data-lang-link="zh" lang="zh-Hant">中文</button>
+  </nav>
+
+  <header class="po-top">
+    <span class="po-top__eyebrow" data-i18n="eyebrow">Mega Evolution · M6</span>
+    <span class="po-top__title" data-i18n="title">Emerald Storm Booster Pack</span>
+  </header>
+
+  <div class="po-ui">
+    <p class="po-hint" id="po-hint" aria-live="polite" data-i18n="loading">Loading…</p>
+    <div class="po-actions">
+      <button class="po-btn" id="po-open" type="button" hidden data-i18n="btn.open">Open this pack</button>
+      <button class="po-btn" id="po-tear" type="button" hidden data-i18n="btn.tear">Tear open</button>
+      <button class="po-btn po-btn--ghost" id="po-skip" type="button" hidden data-i18n="btn.skip">Skip to results</button>
+    </div>
+    <p class="po-counter" id="po-counter" hidden></p>
+  </div>
+
+  <section class="po-results" id="po-results" hidden aria-labelledby="po-results-title">
+    <h2 id="po-results-title" data-i18n="results.title">Your pulls</h2>
+    <ul class="po-results__grid" id="po-results-grid"></ul>
+    <div class="po-actions">
+      <button class="po-btn" id="po-again" type="button" data-i18n="btn.again">Open another pack</button>
+      <button class="po-btn po-btn--ghost" id="po-results-vault" type="button" data-i18n="btn.viewVault">View vault</button>
+    </div>
+  </section>
+
+  <section class="po-vault" id="po-vault" hidden aria-labelledby="po-vault-title">
+    <header class="po-vault__head">
+      <div>
+        <h2 id="po-vault-title" data-i18n="vault.title">Your Vault</h2>
+        <p id="po-vault-summary"></p>
+      </div>
+      <button class="po-btn po-btn--ghost" id="po-vault-close" type="button" data-i18n="vault.close">Close</button>
+    </header>
+    <p class="po-vault__empty" id="po-vault-empty" data-i18n="vault.empty">No special cards yet. Open a pack: every special pull is cased and saved here.</p>
+    <ul class="po-vault__grid" id="po-vault-grid"></ul>
+  </section>
+
+  <div class="po-viewer" id="po-viewer" hidden role="dialog" data-i18n-aria="viewer.aria" aria-label="Card case viewer">
+    <canvas id="po-viewer-canvas"></canvas>
+    <div class="po-viewer__caption" id="po-viewer-caption"></div>
+    <p class="po-viewer__hint" data-i18n="viewer.hint">Drag to rotate</p>
+    <button class="po-btn po-btn--ghost po-viewer__close" id="po-viewer-close" type="button" data-i18n="viewer.back">Back to vault</button>
+  </div>
+
+  <p class="po-disclaimer" data-i18n="disclaimer">Concept prototype for a pitch · not affiliated with The Pokémon Company</p>
+
+  <div class="po-toast" id="po-toast" role="status" aria-live="polite"></div>
+
+  <script type="importmap">
+    { "imports": { "three": "./vendor/three.module.js" } }
+  </script>
+  <script type="module" src="./pack-opening.js"></script>
+</body>
+</html>

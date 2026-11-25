@@ -5,7 +5,10 @@
   --po-sky-muted: rgba(22, 50, 74, 0.62);
   --po-accent: #24d38d;
   --po-accent-ink: #04140c;
-  --po-font: "Noto Sans TC", "Noto Sans JP", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --po-font: "IBM Plex Sans JP", "Noto Sans TC", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --po-mono: "IBM Plex Mono", ui-monospace, "SF Mono", monospace;
+  --po-ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --po-hair: rgba(22, 50, 74, 0.1);
 }
 
 * { box-sizing: border-box; }
@@ -82,7 +85,7 @@ body.is-uncommon .po-bg__rare { opacity: 0.18; animation: po-spin 14s linear inf
   height: 36px;
   border-radius: 50%;
   border: 2px solid rgba(255, 255, 255, 0.9);
-  box-shadow: 0 0 14px rgba(255, 90, 150, 0.7);
+  box-shadow: 0 1px 2px rgba(22, 50, 74, 0.25);
   transform: scale(0.4);
   opacity: 0;
   transition: transform 0.25s ease, opacity 0.25s ease;
@@ -96,7 +99,6 @@ body.is-uncommon .po-bg__rare { opacity: 0.18; animation: po-spin 14s linear inf
   width: var(--trail, 0px);
   border-radius: 4px;
   background: linear-gradient(90deg, rgba(255, 60, 140, 0), rgba(255, 120, 180, 0.85) 70%, #fff);
-  box-shadow: 0 0 10px rgba(255, 80, 150, 0.8);
 }
 
 /* ---------- Special card flash ---------- */
@@ -129,13 +131,10 @@ body.is-uncommon .po-bg__rare { opacity: 0.18; animation: po-spin 14s linear inf
   text-align: center;
 }
 .po-top__eyebrow {
-  font-size: 11px;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: #0f8a5f;
-  font-weight: 700;
+  font: 400 12px/16px var(--po-mono);
+  color: var(--po-sky-muted);
 }
-.po-top__title { font-size: 15px; font-weight: 700; color: var(--po-sky-ink); }
+.po-top__title { font-size: 15px; line-height: 20px; font-weight: 500; color: var(--po-sky-ink); }
 
 /* ---------- Bottom UI ---------- */
 .po-ui {
@@ -154,38 +153,40 @@ body.is-uncommon .po-bg__rare { opacity: 0.18; animation: po-spin 14s linear inf
 .po-hint {
   margin: 0;
   font-size: 14px;
-  font-weight: 600;
+  line-height: 20px;
+  font-weight: 500;
   color: var(--po-sky-ink);
-  padding: 8px 14px;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.78);
-  box-shadow: 0 4px 14px rgba(22, 50, 74, 0.12);
+  padding: 8px 16px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: 0 0 0 1px var(--po-hair), 0 8px 24px rgba(22, 50, 74, 0.06);
   backdrop-filter: blur(6px);
 }
 .po-hint:empty { display: none; }
 .po-actions { display: flex; gap: 10px; }
-.po-counter { margin: 0; font-size: 12px; letter-spacing: 0.12em; color: var(--po-sky-muted); }
+.po-counter { margin: 0; font: 400 12px/16px var(--po-mono); font-variant-numeric: tabular-nums; color: var(--po-sky-muted); }
 
 .po-btn {
   pointer-events: auto;
   appearance: none;
   border: 0;
-  border-radius: 999px;
-  padding: 12px 22px;
-  font: 700 14px/1 var(--po-font);
+  border-radius: 10px;
+  min-height: 44px;
+  padding: 12px 20px;
+  font: 500 14px/20px var(--po-font);
   color: var(--po-accent-ink);
   background: var(--po-accent);
   cursor: pointer;
-  transition: transform 0.15s ease, background-color 0.15s ease;
+  transition: transform 160ms var(--po-ease), background-color 160ms var(--po-ease);
 }
 .po-btn:hover { background: #4be3a5; }
-.po-btn:active { transform: scale(0.97); }
+.po-btn:active { transform: scale(0.98); }
 .po-btn:focus-visible { outline: 2px solid var(--po-sky-ink); outline-offset: 3px; }
 .po-btn--ghost {
   color: var(--po-sky-ink);
-  background: rgba(255, 255, 255, 0.78);
+  background: rgba(255, 255, 255, 0.82);
   backdrop-filter: blur(6px);
-  box-shadow: inset 0 0 0 1px rgba(22, 50, 74, 0.14);
+  box-shadow: inset 0 0 0 1px var(--po-hair);
 }
 .po-btn--ghost:hover { background: #fff; }
 /* ghost buttons inside the dark vault / viewer keep the dark style */
@@ -213,14 +214,14 @@ body.is-uncommon .po-bg__rare { opacity: 0.18; animation: po-spin 14s linear inf
   animation: po-fade 0.4s ease both;
 }
 .po-results[hidden] { display: none; }
-.po-results h2 { margin: 0; font-size: 20px; }
+.po-results h2 { margin: 0; font-size: 20px; line-height: 28px; font-weight: 500; }
 .po-results__grid {
   list-style: none;
   margin: 0;
   padding: 0;
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 150px));
-  gap: 14px;
+  gap: 16px;
   width: 100%;
   justify-content: center;
 }
@@ -235,19 +236,21 @@ body.is-uncommon .po-bg__rare { opacity: 0.18; animation: po-spin 14s linear inf
   width: 100%;
   height: auto;
   border-radius: 6px;
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 8px 24px rgba(22, 50, 74, 0.12);
 }
-.po-results__grid li.is-rare img { box-shadow: 0 0 0 2px #ffd36e, 0 0 28px rgba(255, 211, 110, 0.55); }
+.po-results__grid li.is-rare img { box-shadow: 0 0 0 1px #b7791f, 0 8px 24px rgba(22, 50, 74, 0.12); }
 .po-rarity {
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  padding: 3px 8px;
-  border-radius: 999px;
-  background: rgba(22, 50, 74, 0.08);
+ /* signature: a printed rarity stamp, the same everywhere */
+  font: 500 12px/16px var(--po-mono);
+  padding: 2px 6px;
+  border-radius: 4px;
+  color: var(--po-sky-muted);
+  box-shadow: inset 0 0 0 1px rgba(22, 50, 74, 0.22);
 }
-.po-rarity--RR { background: linear-gradient(90deg, #ff7aa8, #ffd36e, #6ee7ff); color: #1a0d00; }
-.po-rarity--R { background: #ffd36e; color: #1a0d00; }
+.po-rarity--RR { color: #0f7a54; box-shadow: inset 0 0 0 1px #0f7a54; }
+.po-rarity--R { color: #8a5a12; box-shadow: inset 0 0 0 1px #b7791f; }
+.po-no { font: 400 12px/16px var(--po-mono); font-variant-numeric: tabular-nums; color: var(--po-sky-muted); }
+.po-results__meta { display: flex; align-items: center; gap: 8px; }
 
 @media (max-width: 640px) {
   .po-results__grid { grid-template-columns: repeat(3, minmax(0, 110px)); }
@@ -270,11 +273,11 @@ body.is-uncommon .po-bg__rare { opacity: 0.18; animation: po-spin 14s linear inf
   z-index: 6;
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  gap: 8px;
   padding: 8px 12px;
   border: 0;
-  border-radius: 999px;
-  font: 700 13px/1 var(--po-font);
+  border-radius: 10px;
+  font: 500 13px/20px var(--po-font);
   color: var(--po-sky-ink);
   background: rgba(255, 255, 255, 0.8);
   box-shadow: inset 0 0 0 1px rgba(22, 50, 74, 0.14), 0 4px 14px rgba(22, 50, 74, 0.1);
@@ -285,15 +288,16 @@ body.is-uncommon .po-bg__rare { opacity: 0.18; animation: po-spin 14s linear inf
 .po-vault-btn:focus-visible { outline: 2px solid #fff; outline-offset: 3px; }
 .po-vault-btn__count {
   min-width: 20px;
-  padding: 3px 6px;
-  border-radius: 999px;
-  background: var(--po-accent);
-  color: var(--po-accent-ink);
-  font-size: 11px;
+  padding: 0 6px;
+  border-radius: 4px;
+  box-shadow: inset 0 0 0 1px var(--po-hair);
+  color: var(--po-sky-ink);
+  font: 400 12px/20px var(--po-mono);
+  font-variant-numeric: tabular-nums;
   text-align: center;
 }
-.po-vault-btn.is-bump { animation: po-bump 0.6s cubic-bezier(0.3, 1.6, 0.5, 1); }
-@keyframes po-bump { 40% { transform: scale(1.18); } }
+.po-vault-btn.is-bump { animation: po-bump 400ms var(--po-ease); }
+@keyframes po-bump { 40% { transform: scale(1.06); } }
 
 /* ---------- Vault gallery ---------- */
 .po-vault {
@@ -348,13 +352,12 @@ body.is-uncommon .po-bg__rare { opacity: 0.18; animation: po-spin 14s linear inf
   box-shadow:
     inset 0 0 0 1px rgba(255, 255, 255, 0.55),
     inset 0 0 0 4px rgba(255, 255, 255, 0.08),
-    0 0 0 1px rgba(255, 90, 160, 0.25),
     0 14px 30px rgba(0, 0, 0, 0.55);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transition: transform 200ms var(--po-ease), box-shadow 200ms var(--po-ease);
 }
 .po-slab:hover, .po-slab:focus-visible {
-  transform: translateY(-4px) rotateZ(-1deg);
-  box-shadow: inset 0 0 0 1px #fff, 0 0 0 2px rgba(62, 224, 160, 0.6), 0 0 26px rgba(255, 100, 170, 0.35), 0 18px 34px rgba(0, 0, 0, 0.6);
+  transform: translateY(-4px);
+  box-shadow: inset 0 0 0 1px #fff, 0 18px 34px rgba(0, 0, 0, 0.6);
   outline: none;
 }
 .po-slab__label {
@@ -371,7 +374,7 @@ body.is-uncommon .po-bg__rare { opacity: 0.18; animation: po-spin 14s linear inf
 }
 .po-slab__text { display: flex; flex-direction: column; font-size: 9px; line-height: 1.25; }
 .po-slab__text b { font-size: 9.5px; }
-.po-slab__grade { font-weight: 800; font-size: 20px; color: #b7791f; }
+.po-slab__grade { font: 500 18px/1 var(--po-mono); color: #b7791f; }
 .po-slab--RR .po-slab__grade { color: #c0392b; }
 .po-slab__window {
   flex: 1;
@@ -438,12 +441,13 @@ body.is-uncommon .po-bg__rare { opacity: 0.18; animation: po-spin 14s linear inf
   left: 50%;
   z-index: 7;
   padding: 10px 16px;
-  border-radius: 999px;
+  border-radius: 10px;
   font-size: 13px;
-  font-weight: 700;
-  color: var(--po-accent-ink);
-  background: var(--po-accent);
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.4);
+  line-height: 20px;
+  font-weight: 500;
+  color: #fff;
+  background: var(--po-sky-ink);
+  box-shadow: 0 8px 24px rgba(22, 50, 74, 0.16);
   opacity: 0;
   transform: translate(-50%, -8px);
   transition: opacity 0.3s ease, transform 0.3s ease;
@@ -451,7 +455,7 @@ body.is-uncommon .po-bg__rare { opacity: 0.18; animation: po-spin 14s linear inf
   white-space: nowrap;
 }
 .po-toast.is-on { opacity: 1; transform: translate(-50%, 0); }
-.po-results li .po-in-vault { font-size: 11px; color: #0f8a5f; font-weight: 700; }
+.po-results li .po-in-vault { font-size: 12px; line-height: 16px; color: #0f7a54; font-weight: 500; }
 
 @media (prefers-reduced-motion: reduce) {
   .po-vault, .po-vault__grid li, .po-viewer, .po-vault-btn.is-bump { animation: none; }
@@ -490,25 +494,25 @@ body.is-uncommon .po-bg__rare { opacity: 0.18; animation: po-spin 14s linear inf
   right: 14px;
   z-index: 6;
   display: flex;
-  gap: 2px;
-  padding: 3px;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.8);
+  gap: 4px;
+  padding: 4px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.82);
   box-shadow: inset 0 0 0 1px rgba(22, 50, 74, 0.14), 0 4px 14px rgba(22, 50, 74, 0.1);
   backdrop-filter: blur(6px);
 }
 .po-lang button {
   appearance: none;
   border: 0;
-  padding: 6px 9px;
-  border-radius: 999px;
-  font: 700 11px/1 var(--po-font);
+  padding: 4px 8px;
+  border-radius: 6px;
+  font: 500 12px/16px var(--po-font);
   color: var(--po-sky-muted);
   background: transparent;
   cursor: pointer;
 }
 .po-lang button:hover { color: var(--po-sky-ink); background: rgba(22, 50, 74, 0.06); }
-.po-lang button[aria-current="true"] { color: var(--po-accent-ink); background: var(--po-accent); }
+.po-lang button[aria-current="true"] { color: #fff; background: var(--po-sky-ink); }
 .po-lang button:focus-visible { outline: 2px solid var(--po-sky-ink); outline-offset: 2px; }
 
 /* narrow screens: keep the header from colliding with the vault button */

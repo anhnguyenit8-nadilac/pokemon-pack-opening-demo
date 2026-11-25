@@ -1262,7 +1262,7 @@ function showResults() {
     if (c.data.rarity === 'RR' || c.data.rarity === 'R') li.classList.add('is-rare');
     li.style.animationDelay = `${i * 0.07}s`;
     li.innerHTML = `<img src="${CFG.cardImage(c.data.name)}" alt="${t('card.alt', { n: c.data.number, r: c.data.rarity })}" loading="lazy">
-      <span class="po-rarity po-rarity--${c.data.rarity}">No.${String(c.data.number).padStart(3, '0')} · ${c.data.rarity}</span>
+      <span class="po-results__meta"><span class="po-rarity po-rarity--${c.data.rarity}">${c.data.rarity}</span><span class="po-no">No.${String(c.data.number).padStart(3, '0')}</span></span>
       ${c.vaultEntry ? `<span class="po-in-vault">${t('results.inVault')}</span>` : ''}`;
     ui.grid.appendChild(li);
   });
